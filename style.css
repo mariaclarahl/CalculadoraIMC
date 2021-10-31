@@ -1,0 +1,95 @@
+*{
+    margin:0;
+    padding:0;
+    border:none;
+    text-decoration:none;
+    box-sizing: border-box;
+    --verde: #3BD6AD;
+    --branco: #fefefe;
+    --verde-escuro: #0FCF9E;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+html{
+    font-size:62,5%;
+}
+
+body{
+    display:flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background: var(--verde);
+}
+
+.card{
+    background: var(--branco);
+    max-width:50rem;
+    width: 20%;
+    min-width:20rem;
+    height: 30rem;
+    border-radius:1rem;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem 2rem;
+}
+
+h1, label, span {
+    color:var(--verde-escuro);
+}
+
+h1{
+    font-size: 1rem;
+    margin-top:1rem;
+}
+
+form{
+    margin: 1rem 0;
+}
+
+.nome, .peso,.altura{
+    font-size: .8rem;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+input{
+    box-shadow: 0px 1px 2px #c4c4c4;
+    width:8rem;
+    height: 1.2rem;
+    margin-left:1rem;
+    border-radius: 1rem;
+}
+
+button{
+    background: var(--verde-escuro);
+    color:var(--branco);
+    width: 10rem;
+    height:2rem;
+    margin: 1.5rem 1rem;
+    border-radius: .5rem;
+}
+
+button:hover{
+    background: var(--verde);
+}
+
+.resultado{
+    box-shadow: 0px 2px 4px #c4c4c4;
+    padding:1rem;
+    border-radius:5px;
+    min-width:10rem;
+    min-height:5rem;
+    color:red;
+}
+
+p{
+    font-size:.8rem;
+    color:lightsteelblue;
+    text-align: center;
+    line-height: 1.5rem;
+}
